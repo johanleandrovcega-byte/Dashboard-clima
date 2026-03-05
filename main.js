@@ -10,7 +10,7 @@ form.addEventListener("submit", async (e) => {
 
     const ciudad = document.getElementById("ciudad").value;
 
-    loader.classList.remove("oculto"); // MOSTRAR SPINNER
+    loader.classList.remove("oculto"); 
 
     try {
         const datosCiudad = await obtenerCoordenadas(ciudad);
@@ -24,7 +24,7 @@ form.addEventListener("submit", async (e) => {
     } catch (error) {
         mostrarError(error.message);
     } finally {
-        loader.classList.add("oculto"); // OCULTAR SPINNER
+        loader.classList.add("oculto");
     }
 });
 

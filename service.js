@@ -1,4 +1,4 @@
-// se obtienen las coordenadas de la ciudad buscada
+
 export async function obtenerCoordenadas(ciudad) {
     try {
         const respuesta = await fetch(
@@ -19,7 +19,7 @@ export async function obtenerCoordenadas(ciudad) {
 }
 
 
-// Obtenemos el clima actual de la ciudad indicada 
+
 export async function obtenerClima(lat, lon) {
     try {
         const respuesta = await fetch(
