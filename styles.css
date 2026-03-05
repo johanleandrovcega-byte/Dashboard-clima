@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.card {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #78d8ab;
+}
+.titulo {
+    font-size: 28px;
+    margin-bottom: 20px;
+    animation: flotar 3s ease-in-out infinite;
+}
+@keyframes flotar {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+/* Responsive */ 
+
+
+@media (max-width: 600px) {
+    form {
+        flex-direction: column;
+    }
+}
+.loader {
+    margin: 20px auto;
+    width: 40px;
+    height: 40px;
+    border: 5px solid #eee;
+    border-top: 5px solid #4facfe;
+    border-radius: 50%;
+    animation: girar 1s linear infinite;
+}
+
+.oculto {
+    display: none;
+}
+
+@keyframes girar {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+

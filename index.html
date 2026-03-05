@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard del Clima</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="titulo">🌤 Dashboard de Clima</h1>
+
+
+        <form id="formClima">
+            <input type="text" id="ciudad" placeholder="Ingresa una ciudad" required>
+            <button type="submit">Buscar</button>
+        </form>
+
+          <div id="loader" class="loader oculto"></div>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
